@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .container {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid red;
+            box-shadow: 0 0 20px red;
+        }
+
+        .about-content {
+            flex: 2;
+            margin-left: 50px;
+        }
+
+        .about-content h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        .about-content h1 span {
+            color: red;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: red;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .btn {
+            margin-top: 30px;
+        }
+
+        .btn button {
+            background-color: red;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn button:hover {
+            background-color: black;
+            color: red;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+             <span>About</span>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./project.html">Project</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="about-section">
+            <div class="about-image" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="./bio pic.jpg" alt="Charlotte Smith">
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-duration="1500">
+                <h1>Hey, I&#39;m <span>Er. Rishav Kumar</span></h1>
+                <h1>I&#39;m a <span>web Developer</span></h1>
+                <p>I specialize in creating beautiful, responsive, and user-friendly websites to bring ideas to life."</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+</body>
+</html>

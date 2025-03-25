@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Contact Me</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .container {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-section {
+            background-color: #222;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .contact-section h1 {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: red;
+            font-size: 24px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-links a:hover {
+            color: white;
+        }
+
+        .social-links i {
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover i {
+            transform: scale(1.2);
+        }
+
+        .social-links span {
+            font-size: 16px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Charlotte <span>Smith</span>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <div class="social-links" data-aos="fade-in" data-aos-duration="1500">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i> <span>Rishav Kumar</span>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> <span>Rishav_rajveer03</span>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i> <span>Rishav_rajveer03</span>
+                </a>
+                <a href="https://telegram.org" target="_blank">
+                    <i class="fa-brands fa-telegram"></i> <span>Rishav_rajveer03</span>
+                </a>
+                <a href="mailto:example@example.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i> <span>Rishavrajveer03@gmail.com</span>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> <span>+91 123 456 7890</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+</body>
+</html>

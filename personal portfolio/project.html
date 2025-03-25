@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>My Projects</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .container {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            font-size: 20px;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: white;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        .btn a {
+            display: inline-block;
+            background-color: red;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .btn a:hover {
+            background-color: black;
+            color: red;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span>Projects</span>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="./project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="projects-section">
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="./download (1).jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Explore my latest projects that bring ideas to life with clean, efficient code.</p>
+                <div class="btn">
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <img src="./download (2).jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p> my latest projects that bring ideas to life with clean, efficient code.</p>
+                <div class="btn">
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <img src="./download (3).jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>my own  latest projects that bring ideas to life with clean, efficient code</p>
+                <div class="btn">
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+</body>
+</html>
